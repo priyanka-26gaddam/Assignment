@@ -201,6 +201,16 @@ SECTION-3 (Pushing assignments to remote repository) - Steps to follow:
                         
 SECTION-4 (Pushing source code to remote repository using Eclipse GIT plugin) - Steps to follow:
 1.One developer from project team will create eclipse projects ‘SampleProj’ & add sample source code files. Then commit all files through eclipse GIT plugin.
+Ans:1.open eclipse IDE then shit to git repository    
+      2.   select add on existing local repository
+      3.Browse the repository folder and add to it
+      4.select to clone a repository and enter url. and finish
+      Ans: 1.Right click on project and select commit
+2 select commit
+3.we can git stagung view  then select commit
+4. then right click on the project and select team.
+5. in that team memu select push branch master.
+
                                  
 2.Collaborate other team members with your github account so that they can also modify the committed files. 
 3.Other developers from same team will checkout all files from remote repository. This might get conflicts since certain files fail to merge. In such case, merge it manually.
