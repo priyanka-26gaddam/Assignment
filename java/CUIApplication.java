@@ -1,4 +1,38 @@
-    import java.util.Scanner; 
+import java.util.Scanner; 
+public class CUIApplication{
+public static void main(String[] args) {
+             // TODO Auto-generated method stub
+    Scanner sc=new Scanner(System.in);
+    boolean isLonginSuccess=false;
+    for(int i=0;i<3;i++)
+    {
+    	boolean isValidUser=true;
+    	System.out.println("enter user name: ");
+    	String userName=sc.nextLine();
+    	System.out.println("enter user password: ");
+    	String password=sc.nextLine();
+    	if(userName.contains(" ")|| userName.length()<3) {
+    		System.out.println("Invalid user name");
+    		isValidUser=false;
+    	}
+    	if(password.contains(" ") || password.length()<3)
+    	{
+    		System.out.println("invalid user password");
+    		isValidUser=false;
+    	}
+    	if(isValidUser) {
+    		System.out.println("Welcome " + userName);
+    		isLonginSuccess=true;
+    		break;
+    	}
+    	
+    }
+    if(!isLonginSuccess){
+    	System.out.println("Please Contact Admin!");
+    	return;
+    }
+}
+}   /* import java.util.Scanner; 
 public class CUIApplication{
 public static void main(String[] args) {
              // TODO Auto-generated method stub
@@ -28,7 +62,7 @@ public static void main(String[] args) {
                     System.out.println("Username or password mismatch");
              }
        }
-       }
+       }*/
        
 
 /*import java.util.Scanner;
