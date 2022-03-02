@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var f1 = function func1(n)
+            {
+                function compose(square,double,n)
+                {
+                    return square(double(n));
+                }
+                return compose(square,double,n)
+            }
+            var f2 = function func2(n)
+            {
+                function compose(double,square,n)
+                {
+                    return double(square(n));
+                }
+                return compose(double,square,n)
+            }
+            function square(n)
+            {
+                return n*n;
+            }
+            function double(n)
+            {
+                return n*2;
+            }
+            document.write(f1(5));
+            document.write("<br>"+f1(10));
+            document.write("<br>"+f2(5));
+            document.write("<br>"+f2(10));
+        </script>
+    </body>
+</html>

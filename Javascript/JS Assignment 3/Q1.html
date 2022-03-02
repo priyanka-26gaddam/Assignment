@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            class Rectangle
+            {
+                constructor(height, width)
+                {
+                    this.height = height;
+                    this.width = width;
+                }
+            }
+            const r = new Rectangle(parseInt(prompt("Enter Height: ")),parseInt(prompt("Enter Width: ")));
+            //instance
+            document.write("Instance created: "+r instanceof Rectangle);
+            document.write("<br>Height: "+r.height);
+            document.write("<br>Width: "+r.width);
+            //change properties(optional)
+            r.height = 12;
+            //instance
+            document.write("Instance created: "+r instanceof Rectangle);
+            document.write("<br>Height: "+r.height);
+            document.write("<br>Width: "+r.width);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function composedValue(square,double,n)
+            {
+                return square(double(n));
+            }
+            function square(n)
+            {
+                return n*n;
+            }
+            function double(n)
+            {
+                return n*2;
+            }
+            var n = parseInt(prompt("Enter a number: "));
+            document.write(composedValue(square,double,n));
+        </script>
+    </body>
+</html>

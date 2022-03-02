@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var recursiveMapSquare = function(arr, func)
+            {
+                if(arr.length === 1)
+                {
+                    return func(arr);
+                }
+                else
+                {
+                    return [func(arr[0])].concat(recursiveMapSquare(arr.slice(1),func))
+                }
+            };
+
+            var arr = [1,2,3,4,5];
+            var square = function(s)
+            {
+                return s*s;
+            }
+            var arr2 = [1,4,9,16,25];
+
+            var result = recursiveMapSquare(arr, square);
+            document.write("Original Array: ",arr);
+            document.write("<br>Squared Array: ",result);
+
+            var result2 = recursiveMapSquare(arr2, Math.sqrt);
+            document.write("<br><br>Original Array: ",arr2);
+            document.write("<br>Square Rooted Array: ",result2);
+        </script>
+    </body>
+</html>

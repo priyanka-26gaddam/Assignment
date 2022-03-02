@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\html and css"
+		},
+		{
+			"path": "..\\..\\..\\..\\Downloads\\css-animations-playlist-master"
+		},
+		{
+			"path": "..\\..\\..\\..\\Downloads\\css-grid-playlist-lesson-3"
+		},
+		{
+			"path": "..\\..\\..\\..\\Downloads\\css-flexbox-playlist-master"
+		},
+		{
+			"path": "..\\..\\..\\javascript"
+		},
+		{
+			"path": "..\\.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "js-3",
+		"git.ignoreLimitWarning": true
+	}
+}

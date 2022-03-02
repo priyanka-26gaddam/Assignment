@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function isEven(num) { return(num%2 == 0); }
+            var arr = [1, 3, 5, 4, 2];
+
+            function findRecursive(arr, func) {
+                var p = arr.shift();
+                if (func(p) == true)
+                    return p;
+                else 
+                    return findRecursive(arr, func);
+                }
+            document.write(findRecursive([1, 3, 5, 4, 2], isEven));
+            document.write(findRecursive([1, 3, 5], isEven)); 
+        </script>
+    </body>
+</html>
